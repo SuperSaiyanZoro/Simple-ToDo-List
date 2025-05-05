@@ -48,5 +48,3 @@ You can view the live demo of the Anime-Themed To-Do List here: [Anime-Themed To
     ```
 5. Open a pull request with a description of the changes.
 
-## License
-This project is open-source and available under the [MIT License](LICENSE).
