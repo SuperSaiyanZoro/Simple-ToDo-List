@@ -29,6 +29,9 @@ This is an Anime-Themed To-Do List web application, designed with a fun and inte
     ```
 3. Open the `index.html` file in your browser to view the app.
 
+## Live Demo
+You can view the live demo of the Anime-Themed To-Do List here: [Anime-Themed To-Do List](https://famous-malabi-a4153f.netlify.app/)
+
 ## How to Contribute
 1. Fork the repository.
 2. Create a new branch for your changes.
@@ -47,6 +50,3 @@ This is an Anime-Themed To-Do List web application, designed with a fun and inte
 
 ## License
 This project is open-source and available under the [MIT License](LICENSE).
-
-## Demo
-You can view the live demo here: [Anime-Themed To-Do List](https://famous-malabi-a4153f.netlify.app/)
