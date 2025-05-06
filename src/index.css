@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.4;
+  }
+  
+  body {
+    @apply antialiased text-base;
+  }
+}
+
+@layer components {
+  /* Custom scrollbar styling */
+  .scrollbar-light::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scrollbar-light::-webkit-scrollbar-track {
+    @apply bg-purple-100 rounded-full;
+  }
+  
+  .scrollbar-light::-webkit-scrollbar-thumb {
+    @apply bg-purple-300 rounded-full hover:bg-purple-400 transition-colors;
+  }
+  
+  .scrollbar-dark::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scrollbar-dark::-webkit-scrollbar-track {
+    @apply bg-gray-800 rounded-full;
+  }
+  
+  .scrollbar-dark::-webkit-scrollbar-thumb {
+    @apply bg-purple-800 rounded-full hover:bg-purple-700 transition-colors;
+  }
+  
+  /* Glass card effect */
+  .glass-card {
+    @apply backdrop-blur-md shadow-xl rounded-xl transition-all duration-300;
+  }
+  
+  /* Task animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .task-enter {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+}
+
+/* More aesthetic touches */
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+}
